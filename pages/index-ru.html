@@ -3,14 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
   <title>Home</title>
 </head>
 <body>
   
   <div class="wrapper">
+
+    <header class="header">
+      <div class="header__content container">
+        <div class="header__logo">
+          <img src="../assets/img/icons/logo-icon.svg" alt="">
+        </div>
+        <div class="hamburger-menu">
+          <span></span>
+        </div>
+        <div class="nav__collapse">
+          <nav class="nav">
+            <a href="" class="nav__link">Назначения</a>
+            <a href="" class="nav__link">Отели</a>
+            <a href="" class="nav__link">Полеты</a>
+            <a href="" class="nav__link">Книги</a>
+          </nav>
+          <div class="auth">
+            <a href="" class="auth__link">Вход</a>
+            <a href="" class="auth__link">Регистрация</a>
+          </div>
+          <div class="lang">
+            <button type="button" class="lang__selected">
+              <span class="lang__text">РУС</span>
+              <svg class="lang__icon">
+                <use href="../assets/img/icons/svg-sprites.svg#arrow-down"></use>
+              </svg>
+            </button>
+            <div class="lang__dropdown">
+              <a href="../index.html" class="lang__link">АНГ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
   </div>
 
-  <script src="./assets/js/script.js"></script>
+  <script src="../assets/js/script.js"></script>
 </body>
 </html>

@@ -1,3 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg">
-  
+
+  <symbol viewBox="0 0 24 24" fill="none" stroke="#000" id="arrow-down">
+    <path d="M7.49994 10.25L11.9999 14.75L16.4999 10.25" />
+  </symbol>
+
 </svg>
