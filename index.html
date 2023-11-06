@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/css/style.css">
   <title>Home</title>
 </head>
+
 <body>
-  
+
   <div class="wrapper">
+
+    <div class="decore">
+      <img src="./assets/img/icons/decore.svg" alt="">
+    </div>
 
     <header class="header">
       <div class="header__content container">
@@ -20,14 +26,14 @@
         </div>
         <div class="nav__collapse">
           <nav class="nav">
-            <a href="" class="nav__link">Desitnations</a>
-            <a href="" class="nav__link">Hotels</a>
-            <a href="" class="nav__link">Flights</a>
-            <a href="" class="nav__link">Bookings</a>
+            <a href="#" class="nav__link">Desitnations</a>
+            <a href="#" class="nav__link">Hotels</a>
+            <a href="#" class="nav__link">Flights</a>
+            <a href="#" class="nav__link">Bookings</a>
           </nav>
           <div class="auth">
-            <a href="" class="auth__link">Login</a>
-            <a href="" class="auth__link">Sign up</a>
+            <a href="#" class="auth__link">Login</a>
+            <a href="#" class="auth__link">Sign up</a>
           </div>
           <div class="lang">
             <button type="button" class="lang__selected">
@@ -44,10 +50,44 @@
       </div>
     </header>
 
-    <div id="content"></div>
+    <section class="banner container">
+      <article class="banner__content">
+        <div class="banner__heading">
+          <h4 class="banner__subtitle">Best Destinations around the world</h4>
+          <h1 class="banner__title">Travel, enjoy and live a new and full life</h1>
+        </div>
+        <div class="banner__info">
+          <p class="banner__desc">Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it
+            engrossed listening. Park gate sell they west hard for the.</p>
+          <div class="banner__buttons">
+            <a href="#" class="banner__link">Find out more</a>
+            <button type="button" class="banner__button" id="openModal">
+              <svg class="banner__icon">
+                <use href="./assets/img/icons/svg-sprites.svg#play"></use>
+              </svg>
+              <span class="banner__text">Play Demo</span>
+            </button>
+          </div>
+        </div>
+      </article>
+      <div class="banner__image">
+        <img src="./assets/img/image/traveller.png" alt="traveller">
+      </div>
+
+      <div id="modal" class="modal">
+        <div class="modal__content">
+          <span class="modal__close" id="closeModal">&times;</span>
+          <video class="modal__video" controls>
+            <source src="video.mp4" type="video/mp4">
+            Ваш браузер не поддерживает видео.
+          </video>
+        </div>
+      </div>
+    </section>
 
   </div>
 
   <script src="./assets/js/script.js"></script>
 </body>
+
 </html>

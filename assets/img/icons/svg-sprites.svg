@@ -4,4 +4,9 @@
     <path d="M7.49994 10.25L11.9999 14.75L16.4999 10.25" />
   </symbol>
 
+  <symbol viewBox="0 0 52 52" id="play">
+    <circle cx="26" cy="26" r="26" fill="#DF6951" />
+    <path d="M34 26L22 32.9282V19.0718L34 26Z" fill="white" />
+  </symbol>
+
 </svg>

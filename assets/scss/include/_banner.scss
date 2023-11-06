@@ -1,0 +1,186 @@
+.banner {
+  margin-top: 10px;
+  @include flex(center, center, null, 20px);
+  flex-wrap: wrap;
+
+  &__content {
+    @include flex(start, null, column, 30px);
+  }
+
+  &__heading {
+    max-width: 545px;
+    @include flex(start, null, column, 24px);
+  }
+
+  &__subtitle {
+    @include font(20px, 700, normal, var(--text-light-red));
+    text-transform: uppercase;
+  }
+
+  &__title {
+    font-family: 'Volkhov';
+    @include font(80px, 700, 89px, var(--text-blue));
+    letter-spacing: -3.36px;
+  }
+
+  &__info {
+    max-width: 540px;
+    @include flex(start, null, column, 34px);
+  }
+
+  &__desc {
+    @include font(16px, 500, normal, var(--text-light-blue));
+  }
+
+  &__buttons {
+    @include flex(center, null, null, 44px);
+  }
+
+  &__link {
+    font-family: 'Google Sans';
+    @include button(19px 26px, null, 1px solid var(--gold), 10px, var(--gold), 18px, 500, var(--text-white));
+    transition: .6s all;
+
+    &:hover {
+      @include button(null, null, null, null, transparent, null, null, var(--gold));
+    }
+  }
+
+  &__button {
+    cursor: pointer;
+    @include flex(center, null, null, 20px);
+  }
+
+  &__text {
+    @include font(17px, 500, normal, var(--text-grey));
+    transition: .6s all;
+  }
+
+  &__icon {
+    width: 52px;
+    height: 52px;
+    transition: .6s all;
+  }
+
+  &__image {
+    max-width: 580px;
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.banner__button:hover .banner__icon {
+  opacity: 0.8;
+}
+
+.banner__button:hover .banner__text {
+  color: var(--text-blue);
+}
+
+@media screen and (max-width: 980px){
+  .banner{
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 680px){
+  .banner{
+    padding: 0 20px;
+    &__content {
+      @include flex(null, null, null, 20px);
+    }
+  
+    &__heading {
+      @include flex(null, null, null, 14px);
+    }
+  
+    &__subtitle {
+      @include font(18px);
+    }
+  
+    &__title {
+      @include font(60px, null, 69px);
+    }
+  
+    &__info {
+      @include flex(null, null, null, 24px);
+    }
+  
+    &__desc {
+      @include font(14px);
+    }
+  
+    &__buttons {
+      @include flex(null, null, null, 34px);
+    }
+  
+    &__link {
+      @include button(15px 22px, null, null, null, null, 16px);
+    }
+  
+    &__button {
+      @include flex(null, null, null, 15px);
+    }
+  
+    &__text {
+      @include font(15px);
+    }
+  
+    &__icon {
+      width: 42px;
+      height: 42px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px){
+  .banner{
+    &__content {
+      @include flex(null, null, null, 16px);
+    }
+  
+    &__heading {
+      @include flex(null, null, null, 10px);
+    }
+  
+    &__subtitle {
+      @include font(13px);
+    }
+  
+    &__title {
+      @include font(45px, null, 59px);
+    }
+  
+    &__info {
+      @include flex(null, null, null, 20px);
+    }
+  
+    &__desc {
+      @include font(12px);
+    }
+  
+    &__buttons {
+      @include flex(null, null, null, 24px);
+    }
+  
+    &__link {
+      @include button(12px 19px, null, null, null, null, 14px);
+    }
+  
+    &__button {
+      @include flex(null, null, null, 10px);
+    }
+  
+    &__text {
+      @include font(14px);
+    }
+  
+    &__icon {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}

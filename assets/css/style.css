@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Google Sans";
   src: url("/assets/fonts/GoogleSans/GoogleSans-Regular.ttf");
@@ -26,11 +27,15 @@
 :root {
   --white: #FFFFFF;
   --light-red: #DF6951;
+  --gold: #F1A501;
   --light-blue: #5E6282;
   --dark: #212832;
+  --dark-opacity: #2128328f;
   --text-white: var(--white);
+  --text-grey: #686D77;
   --text-light-red: var(--light-red);
   --text-light-blue: var(--light-blue);
+  --text-blue: #181E4B;
   --text-dark: var(--dark);
 }
 
@@ -55,9 +60,68 @@
   margin: 0 auto;
 }
 
+.decore {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  max-width: 760px;
+}
+.decore img {
+  width: 100%;
+}
+
+/* Стили для модального окна */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.modal__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: var(--white);
+  max-width: 800px;
+  border-radius: 12px;
+  width: 100%;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  animation: fade-in 0.5s;
+}
+
+.modal__video {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.modal__close {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 36px;
+  cursor: pointer;
+  color: var(--dark);
+}
+
+/* Анимация для плавного появления модального окна */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .header {
   position: sticky;
-  top: 0;
+  top: -1px;
   background: var(--white);
   padding: 45px 0 25px 0;
 }
@@ -302,6 +366,7 @@
   .nav__collapse.active {
     max-width: 300px;
     overflow: hidden;
+    box-shadow: -12px 22px 22px var(--dark-opacity);
   }
   .nav {
     width: 100%;
@@ -339,6 +404,215 @@
   }
   .nav__collapse {
     top: 4.85rem;
+  }
+}
+.banner {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.banner__content {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 30px;
+}
+.banner__heading {
+  max-width: 545px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 24px;
+}
+.banner__subtitle {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: normal;
+  color: var(--text-light-red);
+  text-transform: uppercase;
+}
+.banner__title {
+  font-family: "Volkhov";
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 89px;
+  color: var(--text-blue);
+  letter-spacing: -3.36px;
+}
+.banner__info {
+  max-width: 540px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 34px;
+}
+.banner__desc {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--text-light-blue);
+}
+.banner__buttons {
+  display: flex;
+  align-items: center;
+  gap: 44px;
+}
+.banner__link {
+  font-family: "Google Sans";
+  display: inline-flex;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 19px 26px;
+  border: 1px solid var(--gold);
+  border-radius: 10px;
+  background: var(--gold);
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text-white);
+  transition: 0.6s all;
+}
+.banner__link:hover {
+  display: inline-flex;
+  cursor: pointer;
+  text-decoration: none;
+  background: transparent;
+  color: var(--gold);
+}
+.banner__button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.banner__text {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--text-grey);
+  transition: 0.6s all;
+}
+.banner__icon {
+  width: 52px;
+  height: 52px;
+  transition: 0.6s all;
+}
+.banner__image {
+  max-width: 580px;
+  width: 100%;
+}
+.banner__image img {
+  width: 100%;
+}
+
+.banner__button:hover .banner__icon {
+  opacity: 0.8;
+}
+
+.banner__button:hover .banner__text {
+  color: var(--text-blue);
+}
+
+@media screen and (max-width: 980px) {
+  .banner {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .banner {
+    padding: 0 20px;
+  }
+  .banner__content {
+    display: flex;
+    gap: 20px;
+  }
+  .banner__heading {
+    display: flex;
+    gap: 14px;
+  }
+  .banner__subtitle {
+    font-size: 18px;
+  }
+  .banner__title {
+    font-size: 60px;
+    line-height: 69px;
+  }
+  .banner__info {
+    display: flex;
+    gap: 24px;
+  }
+  .banner__desc {
+    font-size: 14px;
+  }
+  .banner__buttons {
+    display: flex;
+    gap: 34px;
+  }
+  .banner__link {
+    display: inline-flex;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 15px 22px;
+    font-size: 16px;
+  }
+  .banner__button {
+    display: flex;
+    gap: 15px;
+  }
+  .banner__text {
+    font-size: 15px;
+  }
+  .banner__icon {
+    width: 42px;
+    height: 42px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .banner__content {
+    display: flex;
+    gap: 16px;
+  }
+  .banner__heading {
+    display: flex;
+    gap: 10px;
+  }
+  .banner__subtitle {
+    font-size: 13px;
+  }
+  .banner__title {
+    font-size: 45px;
+    line-height: 59px;
+  }
+  .banner__info {
+    display: flex;
+    gap: 20px;
+  }
+  .banner__desc {
+    font-size: 12px;
+  }
+  .banner__buttons {
+    display: flex;
+    gap: 24px;
+  }
+  .banner__link {
+    display: inline-flex;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 12px 19px;
+    font-size: 14px;
+  }
+  .banner__button {
+    display: flex;
+    gap: 10px;
+  }
+  .banner__text {
+    font-size: 14px;
+  }
+  .banner__icon {
+    width: 32px;
+    height: 32px;
   }
 }
 
