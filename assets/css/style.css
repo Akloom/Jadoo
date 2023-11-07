@@ -15,6 +15,11 @@
   font-weight: 600;
 }
 @font-face {
+  font-family: "Open Sans";
+  src: url("/assets/fonts/OpenSans/OpenSans_Condensed-SemiBold.ttf");
+  font-weight: 600;
+}
+@font-face {
   font-family: "Poppins";
   src: url("/assets/fonts/Poppins/Poppins-Bold.ttf");
   font-weight: 700;
@@ -124,6 +129,7 @@
   top: -1px;
   background: var(--white);
   padding: 45px 0 25px 0;
+  z-index: 2;
 }
 .header__content {
   display: flex;
@@ -442,6 +448,14 @@
   color: var(--text-blue);
   letter-spacing: -3.36px;
 }
+.banner__title-ru {
+  font-family: "Volkhov";
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 45px;
+  color: var(--text-blue);
+  letter-spacing: -2.36px;
+}
 .banner__info {
   max-width: 540px;
   display: flex;
@@ -539,6 +553,11 @@
     font-size: 60px;
     line-height: 69px;
   }
+  .banner__title-ru {
+    font-size: 34px;
+    line-height: 43px;
+    letter-spacing: -1.36px;
+  }
   .banner__info {
     display: flex;
     gap: 24px;
@@ -585,6 +604,10 @@
     font-size: 45px;
     line-height: 59px;
   }
+  .banner__title-ru {
+    font-size: 28px;
+    line-height: 30px;
+  }
   .banner__info {
     display: flex;
     gap: 20px;
@@ -613,6 +636,144 @@
   .banner__icon {
     width: 32px;
     height: 32px;
+  }
+}
+.services {
+  position: relative;
+  margin-top: 105px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 65px;
+}
+.services__decore {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+.services__heading {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+.services__subtitle {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: normal;
+  color: var(--text-light-blue);
+}
+.services__title {
+  font-family: "Volkhov";
+  font-size: 50px;
+  font-weight: 700;
+  line-height: normal;
+  color: var(--text-dark);
+}
+.services__row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.services__card {
+  position: relative;
+  padding: 45px;
+  border-radius: 36px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-basis: 260px;
+  background: var(--white);
+  transition: 0.6s all;
+}
+.services__card::before {
+  content: "";
+  position: absolute;
+  bottom: -35px;
+  left: -35px;
+  width: 100px;
+  height: 0;
+  border-radius: 30px 30px 10px 0px;
+  background: var(--light-red);
+  z-index: -1;
+  transition: 0.6s all;
+}
+.services__card:hover {
+  box-shadow: 0px 1.85185px 3.14815px 0px rgba(0, 0, 0, 0), 0px 8.14815px 6.51852px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.51852px 25.48148px 0px rgba(0, 0, 0, 0.01), 0px 64.81481px 46.85185px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+}
+.services__card:hover::before {
+  height: 100px;
+}
+.services__info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+}
+.services__text {
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+  color: var(--text-dark);
+}
+.services__desc {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  color: var(--text-light-blue);
+}
+
+@media screen and (max-width: 980px) {
+  .services {
+    padding: 0 40px;
+    gap: 55px;
+  }
+  .services__decore img {
+    width: 100px;
+  }
+  .services__subtitle {
+    font-size: 16px;
+  }
+  .services__title {
+    font-family: "Volkhov";
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .services {
+    gap: 45px;
+  }
+  .services__decore img {
+    width: 100px;
+  }
+  .services__subtitle {
+    font-size: 14px;
+  }
+  .services__title {
+    font-family: "Volkhov";
+    font-size: 34px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .services {
+    gap: 35px;
+  }
+  .services__subtitle {
+    font-size: 12px;
+  }
+  .services__title {
+    font-family: "Volkhov";
+    font-size: 28px;
+  }
+  .services__card {
+    padding: 30px;
   }
 }
 

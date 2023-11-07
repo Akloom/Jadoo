@@ -23,6 +23,12 @@
     letter-spacing: -3.36px;
   }
 
+  &__title-ru {
+    font-family: 'Volkhov';
+    @include font(44px, 700, 45px, var(--text-blue));
+    letter-spacing: -2.36px;
+  }
+
   &__info {
     max-width: 540px;
     @include flex(start, null, column, 34px);
@@ -105,6 +111,11 @@
       @include font(60px, null, 69px);
     }
   
+    &__title-ru {
+      @include font(34px, null, 43px);
+    letter-spacing: -1.36px;
+    }
+  
     &__info {
       @include flex(null, null, null, 24px);
     }
@@ -152,6 +163,10 @@
   
     &__title {
       @include font(45px, null, 59px);
+    }
+  
+    &__title-ru {
+      @include font(28px, null, 30px);
     }
   
     &__info {

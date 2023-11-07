@@ -1,0 +1,141 @@
+.services {
+  position: relative;
+  margin-top: 105px;
+  @include flex(center, center, column, 65px);
+
+  &__decore {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  &__heading {
+    @include flex(null, null, column, 10px);
+    text-align: center;
+  }
+
+  &__subtitle {
+    @include font(18px, 600, normal, var(--text-light-blue));
+  }
+
+  &__title {
+    font-family: 'Volkhov';
+    @include font(50px, 700, normal, var(--text-dark));
+  }
+
+  &__row {
+    @include flex(center, center, null, 40px);
+    flex-wrap: wrap;
+  }
+
+  &__card {
+    position: relative;
+    padding: 45px;
+    border-radius: 36px;
+    @include flex(center, null, column);
+    flex-grow: 1;
+    flex-basis: 260px;
+    background: var(--white);
+    transition: .6s all;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: -35px;
+      left: -35px;
+      width: 100px;
+      height: 0;
+      border-radius: 30px 30px 10px 0px;
+      background: var(--light-red);
+      z-index: -1;
+      transition: .6s all;
+    }
+
+    &:hover {
+      box-shadow: 0px 1.85185px 3.14815px 0px rgba(0, 0, 0, 0.00), 0px 8.14815px 6.51852px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.51852px 25.48148px 0px rgba(0, 0, 0, 0.01), 0px 64.81481px 46.85185px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+    }
+
+    &:hover::before {
+      height: 100px;
+    }
+  }
+
+  &__info {
+    @include flex(center, null, column, 15px);
+    text-align: center;
+  }
+
+  &__text {
+    font-family: 'Open Sans';
+    @include font(20px, 600, normal, var(--text-dark));
+  }
+
+  &__desc {
+    @include font(16px, 500, 26px, var(--text-light-blue));
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .services {
+    padding: 0 40px;
+    gap: 55px;
+
+    &__decore {
+
+      img {
+        width: 100px;
+      }
+    }
+
+    &__subtitle {
+      @include font(16px);
+    }
+
+    &__title {
+      font-family: 'Volkhov';
+      @include font(40px);
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .services {
+    gap: 45px;
+
+    &__decore {
+
+      img {
+        width: 100px;
+      }
+    }
+
+    &__subtitle {
+      @include font(14px);
+    }
+
+    &__title {
+      font-family: 'Volkhov';
+      @include font(34px);
+    }
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .services {
+    gap: 35px;
+
+    &__subtitle {
+      @include font(12px);
+    }
+
+    &__title {
+      font-family: 'Volkhov';
+      @include font(28px);
+    }
+
+    &__card{
+      padding: 30px;
+    }
+  }
+}

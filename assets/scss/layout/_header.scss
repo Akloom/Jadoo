@@ -3,6 +3,7 @@
   top: -1px;
   background: var(--white);
   padding: 45px 0 25px 0;
+  z-index: 2;
 
   &__content {
     @include flex(center, null, null, 20px);
