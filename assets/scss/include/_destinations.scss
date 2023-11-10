@@ -1,0 +1,75 @@
+.destinations {
+  position: relative;
+  margin-top: 150px;
+  @include flex(center, center, column, 60px);
+
+  &__decore{
+    position: absolute;
+    top: 40%;
+    right: -30px;
+  }
+
+  &__heading {
+    @include flex(null, null, column, 8px);
+    text-align: center;
+  }
+
+  &__subtitle {
+    @include font(18px, 600, normal, var(--text-light-blue));
+  }
+
+  &__title {
+    font-family: 'Volkhov';
+    @include font(50px, 700, normal, var(--text-dark));
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .destinations {
+    margin-top: 100px;
+
+    &__decore{
+      display: none;
+    }
+
+    &__subtitle {
+      @include font(16px);
+    }
+
+    &__title {
+      font-family: 'Volkhov';
+      @include font(40px);
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .destinations {
+    margin-top: 80px;
+    gap: 40px;
+
+    &__subtitle {
+      @include font(14px);
+    }
+
+    &__title {
+      font-family: 'Volkhov';
+      @include font(34px);
+    }
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .destinations {
+    margin-top: 50px;
+
+    &__subtitle {
+      @include font(12px);
+    }
+
+    &__title {
+      font-family: 'Volkhov';
+      @include font(28px);
+    }
+  }
+}

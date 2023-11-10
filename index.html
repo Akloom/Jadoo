@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./assets/css/style.css">
   <title>Home</title>
 </head>
@@ -78,7 +79,7 @@
         <div class="modal__content">
           <span class="modal__close" id="closeModal">&times;</span>
           <video class="modal__video" controls>
-            <source src="./assets/videos/#" type="video/mp4">
+            <source src="./assets/videos/egypt.mp4" type="video/mp4">
           </video>
         </div>
       </div>
@@ -124,8 +125,81 @@
       </ul>
     </section>
 
+    <section class="destinations container">
+      <div class="destinations__decore">
+        <img src="./assets/img/icons/decore3.svg" alt="decore">
+      </div>
+      <div class="destinations__heading">
+        <h3 class="destinations__subtitle">Top Selling</h3>
+        <h1 class="destinations__title">Top Destinations</h1>
+      </div>
+      <div class="swiper mySwiper">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide">
+            <div class="card">
+              <div class="card__image">
+                <img src="/assets/img/image/card-image.jpg" alt="">
+              </div>
+              <div class="card__content">
+                <div class="card__heading">
+                  <h6 class="card__location">Rome, Italty</h6>
+                  <span class="card__price">$5,42k</span>
+                </div>
+                <div class="card__trips">
+                  <svg class="card__icon">
+                    <use href="/assets/img/icons/svg-sprites.svg#location"></use>
+                  </svg>
+                  <span class="card__time">10 Days Trip</span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div class="card">
+              <div class="card__image">
+                <img src="/assets/img/image/card-image.jpg" alt="">
+              </div>
+              <div class="card__content">
+                <div class="card__heading">
+                  <h6 class="card__location">London, UK</h6>
+                  <span class="card__price">$4.2k</span>
+                </div>
+                <div class="card__trips">
+                  <svg class="card__icon">
+                    <use href="/assets/img/icons/svg-sprites.svg#location"></use>
+                  </svg>
+                  <span class="card__time">10 Days Trip</span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div class="card">
+              <div class="card__image">
+                <img src="/assets/img/image/card-image.jpg" alt="">
+              </div>
+              <div class="card__content">
+                <div class="card__heading">
+                  <h6 class="card__location">Rome, Italty</h6>
+                  <span class="card__price">$5,42k</span>
+                </div>
+                <div class="card__trips">
+                  <svg class="card__icon">
+                    <use href="/assets/img/icons/svg-sprites.svg#location"></use>
+                  </svg>
+                  <span class="card__time">10 Days Trip</span>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./assets/js/script.js"></script>
 </body>
 

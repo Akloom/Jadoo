@@ -33,3 +33,28 @@ function closeModal() {
   document.getElementById("modal").style.display = "none";
   document.getElementById("modal").removeEventListener("click", closeModal);
 }
+
+// Swiper
+
+let swiper = new Swiper(".mySwiper", {
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+  breakpoints: {
+    600: {
+      slidesPerView: 2,
+      spaceBetween: 15,
+    },
+    680: {
+      slidesPerView: 2,
+      spaceBetween: 25,
+    },
+
+    980: {
+      slidesPerView: 3,
+      spaceBetween: 35,
+    }
+  },
+});
