@@ -1,0 +1,20 @@
+.steps__card-heart{
+  display: inline-block;
+  cursor: pointer;
+
+  svg{
+    width: 20px;
+    height: 20px;
+    stroke: #4152CA;
+    fill: none;
+    transition: fill 0.3s ease, stroke 0.3s ease;
+  }
+}
+
+#likeCheckbox {
+  display: none;
+}
+
+#likeCheckbox:checked + .steps__card-heart svg {
+  fill: #4152CA;
+}

@@ -21,7 +21,7 @@
 
   &__title {
     font-family: 'Volkhov';
-    @include font(50px, 700, normal, var(--text-dark));
+    @include font(50px, 700, normal,  var(--text-blue-700));
   }
 
   &__row {

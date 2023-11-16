@@ -20,17 +20,14 @@
 
   &__title {
     font-family: 'Volkhov';
-    @include font(50px, 700, normal, var(--text-dark));
+    @include font(50px, 700, normal, var(--text-blue-700));
   }
 }
 
 @media screen and (max-width: 980px) {
   .destinations {
     margin-top: 100px;
-
-    &__decore{
-      display: none;
-    }
+    padding: 0 20px;
 
     &__subtitle {
       @include font(16px);
@@ -39,6 +36,15 @@
     &__title {
       font-family: 'Volkhov';
       @include font(40px);
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .destinations {
+
+    &__decore{
+      display: none;
     }
   }
 }
