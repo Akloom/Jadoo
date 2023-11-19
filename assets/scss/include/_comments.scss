@@ -1,0 +1,121 @@
+.comments {
+  margin-top: 200px;
+  @include flex(start, space-between, null, 80px);
+
+  &__content {
+    @include flex(null, null, column, 80px);
+  }
+
+  &__heading {
+    max-width: 400px;
+    @include flex(null, null, column, 10px);
+  }
+
+  &__subtitle {
+    @include font(18px, 600px, normal, var(--text-light-blue));
+  }
+
+  &__title {
+    font-family: "Volkhov", sans-serif;
+    @include font(50px, 700px, normal, var(--text-blue-700));
+  }
+
+  &__pagination {
+    @include flex(center, null, null, 25px);
+    width: 82px;
+    height: 12px;
+
+    &-bullet {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--white-100);
+    }
+  }
+
+  &__cards {
+    position: relative;
+  }
+
+  &__item {
+    position: relative;
+    padding: 30px 65px 35px 35px;
+    max-width: 505px;
+    border-radius: 10px;
+    background: var(--white);
+    box-shadow: 0px 1.85185px 3.14815px 0px rgba(0, 0, 0, 0.00), 0px 8.14815px 6.51852px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.51852px 25.48148px 0px rgba(0, 0, 0, 0.01), 0px 64.81481px 46.85185px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+
+    img {
+      position: absolute;
+      width: 70px;
+      top: -35px;
+      left: -35px;
+    }
+
+    &-content {
+      @include flex(null, null, column, 35px);
+    }
+
+    &-quote {
+      max-width: 400px;
+      @include font(16px, 500, 200%, var(--text-light-blue));
+    }
+
+    &-author {
+      @include flex(null, null, column, 5px);
+    }
+
+    &-title {
+      @include font(18px, 600, normal, var(--text-light-blue));
+    }
+
+    &-subtitle {
+      @include font(14px, 500, normal, var(--text-light-blue));
+    }
+  }
+
+  &__slider {
+    @include flex(start, null, null, 50px);
+  }
+
+  &__arrows {
+    @include flex(null, null, column, 40px);
+
+    &-prev {
+      cursor: pointer;
+    }
+
+    &-next {
+      cursor: pointer;
+    }
+
+    &-icon {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+.icon__disable {
+  stroke: var(--white-100);
+}
+
+.icon__next {
+  stroke: var(--dark);
+}
+
+.icon__prev {
+  stroke: var(--dark);
+}
+
+.item__active {
+  position: absolute;
+  left: -48px;
+  top: -85px;
+  z-index: 1;
+}
+
+.bullet__active{
+  background: var(--dark);
+}
