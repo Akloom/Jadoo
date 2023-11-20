@@ -1,0 +1,175 @@
+.subscribe {
+  position: relative;
+  @include container(1170px);
+  margin-top: 125px;
+  width: 100%;
+  padding: 80px 20px;
+  border-radius: 129px 20px 20px 20px;
+  background: var(--white-150);
+
+  &__content {
+    @include flex(center, null, column, 75px);
+  }
+
+  &__title {
+    max-width: 860px;
+    @include font(33px, 600, 163%, var(--text-light-blue));
+    text-align: center;
+  }
+
+  &__form {
+    @include flex(center, null, null, 25px);
+  }
+
+  &__input {
+    padding: 25px 30px;
+    border-radius: 10px;
+    @include flex(center, null, null, 15px);
+    background: var(--white);
+  }
+
+  &__icon {
+    width: 21px;
+    height: 18px;
+  }
+
+  &__item {
+    width: 380px;
+    font-family: "Montserrat", sans-serif;
+    @include font(14px, 400, normal, var(--text-blue));
+
+    &::placeholder {
+      font-family: "Montserrat", sans-serif;
+      @include font(14px, 400, normal, var(--text-blue-500));
+    }
+  }
+
+  &__btn {
+    cursor: pointer;
+    padding: 23px 55px;
+    border-radius: 10px;
+    background: var(--light-red);
+    font-family: "Open Sans", sans-serif;
+    @include font(17px, 600, normal, var(--text-white));
+    transition: .6s all;
+
+    &:hover {
+      background: var(--light-red-100);
+    }
+  }
+
+  &__decore:nth-of-type(1) {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 0.2;
+    z-index: -1;
+  }
+
+  &__decore:nth-of-type(2) {
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0.2;
+    z-index: -1;
+  }
+
+  &__decore:nth-of-type(3) {
+    position: absolute;
+    right: -35px;
+    top: -35px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .subscribe {
+
+    &__decore:nth-of-type(3) {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .subscribe {
+    margin-top: 75px;
+    border-radius: 20px;
+    padding: 60px 20px;
+
+    &__content{
+      gap: 55px;
+    }
+
+    &__title {
+      @include font(20px);
+    }
+
+    &__item{
+      width: 200px;
+    }
+
+    &__input{
+      padding: 20px 25px;
+    }
+
+    &__btn{
+      padding: 14px 35px;
+    }
+
+    &__decore:nth-of-type(1) {
+      width: 250px;
+    }
+  
+    &__decore:nth-of-type(2) {
+      width: 150px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .subscribe {
+    margin-top: 50px;
+    padding: 40px 20px;
+
+    &__content{
+      gap: 35px;
+    }
+
+    &__title {
+      @include font(12px);
+    }
+
+    &__item{
+      width: 180px;
+
+      &::placeholder{
+        font-size: 12px;
+      }
+    }
+
+    &__form{
+      flex-direction: column;
+    }
+
+    &__input{
+      padding: 12px 17px;
+    }
+
+    &__icon{
+      width: 16px;
+      height: 11px;
+    }
+
+    &__btn{
+      padding: 10px 25px;
+    }
+
+    &__decore:nth-of-type(1) {
+      width: 150px;
+    }
+  
+    &__decore:nth-of-type(2) {
+      width: 100px;
+    }
+  }
+}

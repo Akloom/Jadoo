@@ -1,6 +1,7 @@
 .collaborators {
   margin-top: 100px;
-  @include flex(center, space-between, null, 20px);
+  @include flex(center, center, null, 25px);
+  flex-wrap: wrap;
 
   &__item {
     max-width: 130px;

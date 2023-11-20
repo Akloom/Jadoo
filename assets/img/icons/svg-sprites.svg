@@ -86,10 +86,15 @@
   </symbol>
 
   <symbol viewBox="0 0 24 24" fill="none" id="arrow-prev">
-      <path d="M5 16L12 9L19 16" stroke-width="2" stroke-linecap="round"/>
+    <path d="M5 16L12 9L19 16" stroke-width="2" stroke-linecap="round" />
   </symbol>
 
   <symbol viewBox="0 0 24 24" fill="none" id="arrow-next">
     <path d="M5 8.5L12 15.5L19 8.5" stroke-width="2" stroke-linecap="round" />
+  </symbol>
+
+  <symbol viewBox="0 0 21 18" fill="none" id="email">
+    <path d="M4 6L9.4 10.05C9.75556 10.3167 10.2444 10.3167 10.6 10.05L16 6" stroke="#39425D" stroke-linecap="round" />
+    <rect x="0.5" y="0.5" width="20" height="17" rx="4.5" stroke="#39425D" />
   </symbol>
 </svg>
