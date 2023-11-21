@@ -1,5 +1,6 @@
 .comments {
   margin-top: 200px;
+  padding: 0 20px;
   @include flex(start, space-between, null, 80px);
 
   &__content {
@@ -116,6 +117,125 @@
   z-index: 1;
 }
 
-.bullet__active{
+.bullet__active {
   background: var(--dark);
+}
+
+@media screen and (max-width: 1120px) {
+  .comments {
+    margin-top: 150px;
+
+    @include flex(center, start, column, 80px);
+
+    &__item {
+      padding: 40px 65px 35px 35px;
+
+      img {
+        left: 0;
+      }
+    }
+
+    &__content {
+      text-align: center;
+    }
+
+    &__pagination {
+      display: none;
+    }
+
+    &__slider {
+      margin-top: 50px;
+      justify-content: center;
+    }
+  }
+
+  .item__active {
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .comments {
+    margin-top: 100px;
+    @include flex(null, null, null, 60px);
+
+    &__subtitle {
+      @include font(16px);
+    }
+
+    &__title {
+      @include font(35px);
+    }
+
+    &__item {
+      padding: 40px 35px 25px 25px;
+
+      &-content {
+        @include flex(null, null, null, 15px);
+      }
+
+      &-quote {
+        @include font(14px);
+      }
+
+      &-title {
+        @include font(16px);
+      }
+
+      &-subtitle {
+        @include font(12px);
+      }
+    }
+
+    &__slider {
+      @include flex(null, null, null, 40px);
+    }
+
+    &__arrows {
+      @include flex(null, null, null, 30px);
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .comments {
+    margin-top: 80px;
+    @include flex(null, null, null, 80px);
+
+    &__item {
+      padding: 20px 25px 15px 15px;
+
+      img{
+        width: 50px;
+      }
+
+      &-content {
+        @include flex(null, null, null, 15px);
+      }
+
+      &-quote {
+        @include font(11px);
+      }
+
+      &-title {
+        @include font(13px);
+      }
+
+      &-subtitle {
+        @include font(10px);
+      }
+    }
+
+    &__slider {
+      @include flex(null, null, null, 40px);
+    }
+
+    &__arrows {
+      @include flex(null, null, null, 30px);
+    }
+  }
+
+  .item__active{
+    top: -60px;
+  }
 }

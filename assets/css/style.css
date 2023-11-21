@@ -1394,6 +1394,7 @@
 }
 .comments {
   margin-top: 200px;
+  padding: 0 20px;
   display: flex;
   align-items: start;
   justify-content: space-between;
@@ -1527,6 +1528,109 @@
   background: var(--dark);
 }
 
+@media screen and (max-width: 1120px) {
+  .comments {
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    gap: 80px;
+  }
+  .comments__item {
+    padding: 40px 65px 35px 35px;
+  }
+  .comments__item img {
+    left: 0;
+  }
+  .comments__content {
+    text-align: center;
+  }
+  .comments__pagination {
+    display: none;
+  }
+  .comments__slider {
+    margin-top: 50px;
+    justify-content: center;
+  }
+  .item__active {
+    left: 0;
+  }
+}
+@media screen and (max-width: 680px) {
+  .comments {
+    margin-top: 100px;
+    display: flex;
+    gap: 60px;
+  }
+  .comments__subtitle {
+    font-size: 16px;
+  }
+  .comments__title {
+    font-size: 35px;
+  }
+  .comments__item {
+    padding: 40px 35px 25px 25px;
+  }
+  .comments__item-content {
+    display: flex;
+    gap: 15px;
+  }
+  .comments__item-quote {
+    font-size: 14px;
+  }
+  .comments__item-title {
+    font-size: 16px;
+  }
+  .comments__item-subtitle {
+    font-size: 12px;
+  }
+  .comments__slider {
+    display: flex;
+    gap: 40px;
+  }
+  .comments__arrows {
+    display: flex;
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .comments {
+    margin-top: 80px;
+    display: flex;
+    gap: 80px;
+  }
+  .comments__item {
+    padding: 20px 25px 15px 15px;
+  }
+  .comments__item img {
+    width: 50px;
+  }
+  .comments__item-content {
+    display: flex;
+    gap: 15px;
+  }
+  .comments__item-quote {
+    font-size: 11px;
+  }
+  .comments__item-title {
+    font-size: 13px;
+  }
+  .comments__item-subtitle {
+    font-size: 10px;
+  }
+  .comments__slider {
+    display: flex;
+    gap: 40px;
+  }
+  .comments__arrows {
+    display: flex;
+    gap: 30px;
+  }
+  .item__active {
+    top: -60px;
+  }
+}
 .collaborators {
   margin-top: 100px;
   display: flex;
