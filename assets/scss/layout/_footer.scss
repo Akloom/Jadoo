@@ -1,0 +1,144 @@
+.footer {
+  margin-top: 150px;
+  padding: 0 20px;
+  @include flex(null, space-between, null, 60px);
+  flex-wrap: wrap;
+
+  &__logo {
+    width: 150px;
+  }
+
+  &__info {
+    max-width: 210px;
+    @include flex(null, null, column, 20px);
+  }
+
+  &__desc {
+    @include font(13px, 500, 124.5%, var(--text-light-blue))
+  }
+
+  &__nav {
+    @include flex(null, null, null, 60px);
+    flex-wrap: wrap;
+
+    &-item {
+      @include flex(null, null, column, 35px);
+    }
+
+    &-content {
+      @include flex(null, null, column, 10px);
+    }
+
+    &-title {
+      @include font(21px, 700, 124.5%, var(--text-black));
+    }
+
+    &-link {
+      @include link(18px, 500, var(--text-light-blue));
+
+      &:hover {
+        color: var(--text-blue);
+      }
+    }
+
+    &-subtitle {
+      @include font(20px, 500, 124.5%, var(--text-light-blue));
+    }
+
+    &-download {
+      padding: 8px 18px;
+      border-radius: 17.5px;
+      background: var(--black);
+      @include flex(center, null, null, 5px);
+      text-decoration: none;
+    }
+
+    &-icon {
+      width: 28px;
+      height: 28px;
+      fill: var(--white)
+    }
+
+    &-text {
+      @include flex(null, null, column);
+
+      h6 {
+        @include font(10px, 700, null, var(--text-white));
+        text-transform: uppercase;
+      }
+
+      p {
+        @include font(12px, 700, null, var(--text-white));
+      }
+    }
+  }
+}
+
+.download {
+  flex-direction: row;
+  flex-wrap: wrap
+}
+
+.social {
+  @include flex(null, null, null, 25px);
+
+  &__link {
+    padding: 9px;
+    box-sizing: content-box;
+    border-radius: 50%;
+    background: var(--white);
+    filter: drop-shadow(0px 2px 10px rgba(0, 0, 0, 0.10));
+    transition: .8s all;
+
+    &:hover {
+      background: var(--light-red);
+    }
+  }
+
+  &__icon {
+    display: flex;
+    width: 24px;
+    height: 24px;
+    fill: var(--black);
+    transition: .6s all;
+  }
+}
+
+.social__link:hover .social__icon {
+  fill: var(--white);
+}
+
+@media screen and (max-width: 1195px) {
+  .footer {
+    justify-content: center;
+
+    &__nav {
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .footer {
+    margin-top: 80px;
+    gap: 40px;
+
+    &__nav {
+      justify-content: center;
+      gap: 40px;
+
+      &-item{
+        gap: 20px;
+      }
+
+      &-title {
+        @include font(18px);
+      }
+
+      &-link {
+        @include link(16px);
+      }
+
+    }
+  }
+}
