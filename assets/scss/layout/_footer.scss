@@ -1,5 +1,6 @@
 .footer {
   margin-top: 150px;
+  margin-bottom: 50px;
   padding: 0 20px;
   @include flex(null, space-between, null, 60px);
   flex-wrap: wrap;
@@ -47,16 +48,23 @@
 
     &-download {
       padding: 8px 18px;
+      border: 1px solid var(--black);
       border-radius: 17.5px;
       background: var(--black);
       @include flex(center, null, null, 5px);
       text-decoration: none;
+      transition: .6s all;
+
+      &:hover {
+        background: transparent;
+      }
     }
 
     &-icon {
       width: 28px;
       height: 28px;
-      fill: var(--white)
+      fill: var(--white);
+      transition: .6s all;
     }
 
     &-text {
@@ -65,10 +73,12 @@
       h6 {
         @include font(10px, 700, null, var(--text-white));
         text-transform: uppercase;
+        transition: .6s all;
       }
 
       p {
         @include font(12px, 700, null, var(--text-white));
+        transition: .6s all;
       }
     }
   }
@@ -108,6 +118,18 @@
   fill: var(--white);
 }
 
+.footer__nav-download:hover .footer__nav-icon {
+  fill: var(--black);
+}
+
+.footer__nav-download:hover .footer__nav-text h6 {
+  color: var(--text-black);
+}
+
+.footer__nav-download:hover .footer__nav-text p {
+  color: var(--text-black);
+}
+
 @media screen and (max-width: 1195px) {
   .footer {
     justify-content: center;
@@ -121,13 +143,14 @@
 @media screen and (max-width: 580px) {
   .footer {
     margin-top: 80px;
+    margin-bottom: 20px;
     gap: 40px;
 
     &__nav {
       justify-content: center;
       gap: 40px;
 
-      &-item{
+      &-item {
         gap: 20px;
       }
 
