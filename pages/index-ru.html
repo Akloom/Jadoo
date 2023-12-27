@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/style.css">
   <title>Home</title>
 </head>
+
 <body>
-  
+
   <div class="wrapper">
 
     <header class="header">
@@ -44,14 +48,15 @@
       </div>
     </header>
 
-    <section class="banner container">
+    <section class="banner container" data-aos="fade-right">
       <article class="banner__content">
         <div class="banner__heading">
           <h4 class="banner__subtitle">Лучшие пункты назначения по всему миру</h4>
           <h1 class="banner__title-ru">Путешествуйте, наслаждайтесь и живите новой и полноценной жизнью</h1>
         </div>
         <div class="banner__info">
-          <p class="banner__desc">Построенная калитка уже не восхищает, а само тщеславие Бартона в ней творится. Предпочтительно спортсменам это
+          <p class="banner__desc">Построенная калитка уже не восхищает, а само тщеславие Бартона в ней творится.
+            Предпочтительно спортсменам это
             увлеченно слушаю. Ворота парка продаются на запад.</p>
           <div class="banner__buttons">
             <a href="#" class="banner__link">Узнать больше</a>
@@ -78,8 +83,380 @@
       </div>
     </section>
 
+    <section class="services container" data-aos="fade-left">
+      <div class="services__decore">
+        <img src="../assets/img/icons/decore2.svg" alt="decore">
+      </div>
+      <div class="services__heading">
+        <h3 class="services__subtitle">Категории</h3>
+        <h1 class="services__title">Мы предлагаем лучшие услуги</h1>
+      </div>
+      <ul class="services__row">
+        <li class="services__card">
+          <img src="../assets/img/icons/card-illustrasion.svg" alt="plane">
+          <div class="services__info">
+            <h6 class="services__text">Расчетная погода</h6>
+            <p class="services__desc">Built Wicket longer admire do barton vanity itself do in it.</p>
+          </div>
+        </li>
+        <li class="services__card">
+          <img src="../assets/img/icons/card-illustrasion.svg" alt="plane">
+          <div class="services__info">
+            <h6 class="services__text">Расчетная погода</h6>
+            <p class="services__desc">Built Wicket longer admire do barton vanity itself do in it.</p>
+          </div>
+        </li>
+        <li class="services__card">
+          <img src="../assets/img/icons/card-illustrasion.svg" alt="plane">
+          <div class="services__info">
+            <h6 class="services__text">Расчетная погода</h6>
+            <p class="services__desc">Built Wicket longer admire do barton vanity itself do in it.</p>
+          </div>
+        </li>
+        <li class="services__card">
+          <img src="../assets/img/icons/card-illustrasion.svg" alt="plane">
+          <div class="services__info">
+            <h6 class="services__text">Расчетная погода</h6>
+            <p class="services__desc">Built Wicket longer admire do barton vanity itself do in it.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="destinations container" data-aos="fade-up">
+      <div class="destinations__decore">
+        <img src="../assets/img/icons/decore3.svg" alt="decore">
+      </div>
+      <div class="destinations__heading">
+        <h3 class="destinations__subtitle">Лучшие продажи</h3>
+        <h1 class="destinations__title">Популярные направления</h1>
+      </div>
+      <div class="swiper mySwiper">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide">
+            <div class="card">
+              <div class="card__image">
+                <img src="../assets/img/image/card-image.jpg" alt="card">
+              </div>
+              <div class="card__content">
+                <div class="card__heading">
+                  <h6 class="card__location">Рим, Италия
+                    <span class="card__price">$5,42k</span>
+                </div>
+                <div class="card__trips">
+                  <svg class="card__icon">
+                    <use href="../assets/img/icons/svg-sprites.svg#location"></use>
+                  </svg>
+                  <span class="card__time">10-дневная поездка</span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div class="card">
+              <div class="card__image">
+                <img src="../assets/img/image/card-image2.jpg" alt="card">
+              </div>
+              <div class="card__content">
+                <div class="card__heading">
+                  <h6 class="card__location">Лондон, Великобритания</h6>
+                  <span class="card__price">$4.2k</span>
+                </div>
+                <div class="card__trips">
+                  <svg class="card__icon">
+                    <use href="../assets/img/icons/svg-sprites.svg#location"></use>
+                  </svg>
+                  <span class="card__time">10-дневная поездка</span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div class="card">
+              <div class="card__image">
+                <img src="../assets/img/image/card-image3.jpg" alt="card">
+              </div>
+              <div class="card__content">
+                <div class="card__heading">
+                  <h6 class="card__location">Рим, Италия</h6>
+                  <span class="card__price">$5,42k</span>
+                </div>
+                <div class="card__trips">
+                  <svg class="card__icon">
+                    <use href="../assets/img/icons/svg-sprites.svg#location"></use>
+                  </svg>
+                  <span class="card__time">10-дневная поездка</span>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section class="steps container" data-aos="fade-right">
+      <div class="steps__content">
+        <div class="steps__heading">
+          <h3 class="steps__subtitle">Легко и быстро</h3>
+          <h1 class="steps__title">Забронируйте следующую поездку за 3 простых шага</h1>
+        </div>
+        <div class="steps__info">
+          <article class="steps__item">
+            <img src="../assets/img/icons/steps-icon1.svg" alt="step" class="steps__icon">
+            <div class="steps__desc">
+              <h2 class="steps__head">Выберите пункт назначения</h2>
+              <p class="steps__text">Далеко-далеко за словесными горами в стране гласных, и согласных живут.</p>
+            </div>
+          </article>
+          <article class="steps__item">
+            <img src="../assets/img/icons/steps-icon2.svg" alt="step" class="steps__icon">
+            <div class="steps__desc">
+              <h2 class="steps__head">Произведите оплату</h2>
+              <p class="steps__text">Далеко-далеко за словесными горами в стране гласных, и согласных живут.</p>
+            </div>
+          </article>
+          <article class="steps__item">
+            <img src="../assets/img/icons/steps-icon3.svg" alt="step" class="steps__icon">
+            <div class="steps__desc">
+              <h2 class="steps__head">Добраться до аэропорта в выбранную дату</h2>
+              <p class="steps__text">Далеко-далеко за словесными горами в стране гласных, и согласных живут.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="steps__card">
+        <div class="steps__card-image">
+          <img src="../assets/img/image/greece.jpg" alt="image">
+        </div>
+        <div class="steps__card-text">
+          <h3 class="steps__card-title">Поездка в Грецию</h3>
+          <div class="steps__card-info">
+            <span class="steps__card-date">14-29 Июня |</span>
+            <span class="steps__card-author">Роббин Джозеф</span>
+          </div>
+          <nav class="steps__card-nav">
+            <a href="#" class="steps__card-link">
+              <svg class="steps__card-icon">
+                <use href="../assets/img/icons/svg-sprites.svg#leaf"></use>
+              </svg>
+            </a>
+            <a href="#" class="steps__card-link">
+              <svg class="steps__card-icon">
+                <use href="../assets/img/icons/svg-sprites.svg#map"></use>
+              </svg>
+            </a>
+            <a href="#" class="steps__card-link">
+              <svg class="steps__card-icon">
+                <use href="../assets/img/icons/svg-sprites.svg#send"></use>
+              </svg>
+            </a>
+          </nav>
+          <div class="steps__card-statistic">
+            <div class="steps__card-people">
+              <svg>
+                <use href="../assets/img/icons/svg-sprites.svg#building"></use>
+              </svg>
+              <span>24 человека собираются</span>
+            </div>
+            <div class="steps__card-like">
+              <input type="checkbox" id="likeCheckbox">
+              <label for="likeCheckbox" class="steps__card-heart">
+                <svg>
+                  <use href="../assets/img/icons/svg-sprites.svg#heart"></use>
+                </svg>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="steps__achievement">
+          <div class="steps__achievement-avatar">
+            <img src="../assets/img/image/progress-image.jpg" alt="avatar">
+          </div>
+          <div class="steps__achievement-content">
+            <div class="steps__achievement-heading">
+              <h4 class="steps__achievement-subtitle">Продолжается</h4>
+              <h3 class="steps__achievement-title">Поездка в Рим</h3>
+            </div>
+            <div class="steps__achievement-progress">
+              <p class="steps__achievement-text"><span>40%</span> выполнено</p>
+              <span class="steps__achievement-line"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="comments container" data-aos="fade-left">
+      <div class="comments__content">
+        <div class="comments__heading">
+          <h3 class="comments__subtitle">Отзывы</h3>
+          <h1 class="comments__title">Что люди говорят о нас.</h1>
+        </div>
+        <div class="comments__pagination">
+          <span class="comments__pagination-bullet bullet__active"></span>
+          <span class="comments__pagination-bullet"></span>
+          <span class="comments__pagination-bullet"></span>
+        </div>
+      </div>
+      <div class="comments__slider">
+        <ul class="comments__cards">
+          <li class="comments__item item__active">
+            <img src="../assets/img/image/avatar-image.png" alt="avatar" class="comments__item-avatar">
+            <div class="comments__item-content">
+              <p class="comments__item-quote">«На окнах говорят нарисованные пастбища, но их экспресс-партии используют.
+                Конечно
+                в последний раз он знал то же самое, что и в следующий раз. Верить или отклонять нет».</p>
+              <div class="comments__item-author">
+                <h3 class="comments__item-title">Майк Тайлор</h3>
+                <h4 class="comments__item-subtitle">Лахор, Пакистан</h4>
+              </div>
+            </div>
+          </li>
+          <li class="comments__item">
+            <img src="../assets/img/image/avatar-image.png" alt="avatar" class="comments__item-avatar">
+            <div class="comments__item-content">
+              <p class="comments__item-quote">«На окнах говорят нарисованные пастбища, но их экспресс-партии используют. Конечно
+                в последний раз он знал то же самое, что и в следующий раз. Верить или отклонять нет».</p>
+              <div class="comments__item-author">
+                <h3 class="comments__item-title">Майк Тайлор</h3>
+                <h4 class="comments__item-subtitle">Лахор, Пакистан</h4>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="comments__arrows">
+          <button class="comments__arrows-prev">
+            <svg class="comments__arrows-icon icon__disable">
+              <use href="../assets/img/icons/svg-sprites.svg#arrow-prev"></use>
+            </svg>
+          </button>
+          <button class="comments__arrows-next">
+            <svg class="comments__arrows-icon icon__prev">
+              <use href="../assets/img/icons/svg-sprites.svg#arrow-next"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div class="collaborators container" data-aos="fade-right">
+      <div class="collaborators__item">
+        <img src="../assets/img/image/collaborators-1.png" alt="collaborators" class="collaborators__image">
+      </div>
+      <div class="collaborators__item">
+        <img src="../assets/img/image/collaborators-2.png" alt="collaborators" class="collaborators__image">
+      </div>
+      <div class="collaborators__item">
+        <img src="../assets/img/image/collaborators-3.png" alt="collaborators" class="collaborators__image">
+      </div>
+      <div class="collaborators__item">
+        <img src="../assets/img/image/collaborators-4.png" alt="collaborators" class="collaborators__image">
+      </div>
+      <div class="collaborators__item">
+        <img src="../assets/img/image/collaborators-5.png" alt="collaborators" class="collaborators__image">
+      </div>
+    </div>
+
+    <section class="subscribe" data-aos="fade-left">
+      <div class="subscribe__content">
+        <h1 class="subscribe__title">Подпишитесь, чтобы получать информацию, последние новости и другие интересные предложения о Jadoo
+        </h1>
+
+        <form action="index.html" class="subscribe__form">
+          <label class="subscribe__input">
+            <svg class="subscribe__icon">
+              <use href="../assets/img/icons/svg-sprites.svg#email"></use>
+            </svg>
+            <input type="email" class="subscribe__item" placeholder="Ваш e-mail">
+          </label>
+          <button type="button" class="subscribe__btn">Подписаться</button>
+        </form>
+      </div>
+      <img src="/assets/img/icons/decore4.svg" alt="decore" class="subscribe__decore">
+      <img src="/assets/img/icons/decore5.svg" alt="decore" class="subscribe__decore">
+      <img src="/assets/img/icons/decore6.svg" alt="decore" class="subscribe__decore">
+    </section>
+
+    <footer class="footer container" data-aos="fade-up">
+      <div class="footer__info">
+        <img src="/assets/img/icons/footer-logo.svg" alt="logo" class="footer__logo">
+        <p class="footer__desc">Забронируйте поездку за минуту, получите полный контроль гораздо дольше.</p>
+      </div>
+      <nav class="footer__nav">
+        <div class="footer__nav-item">
+          <h3 class="footer__nav-title">Компания</h3>
+          <div class="footer__nav-content">
+            <a href="#" class="footer__nav-link">О нас</a>
+            <a href="#" class="footer__nav-link">Карьера</a>
+            <a href="#" class="footer__nav-link">Телефон</a>
+          </div>
+        </div>
+        <div class="footer__nav-item">
+          <h3 class="footer__nav-title">Контакы</h3>
+          <div class="footer__nav-content">
+            <a href="#" class="footer__nav-link">Помощь</a>
+            <a href="#" class="footer__nav-link">Нажимать</a>
+            <a href="#" class="footer__nav-link">Филиалы</a>
+          </div>
+        </div>
+        <div class="footer__nav-item">
+          <h3 class="footer__nav-title">Больше</h3>
+          <div class="footer__nav-content">
+            <a href="#" class="footer__nav-link">Авиякомпания</a>
+            <a href="#" class="footer__nav-link">Авиякомпания</a>
+            <a href="#" class="footer__nav-link">Советы</a>
+          </div>
+        </div>
+        <div class="footer__nav-item">
+          <div class="footer__nav-social social">
+            <a href="#" class="social__link">
+              <svg class="social__icon">
+                <use href="/assets/img/icons/svg-sprites.svg#fb"></use>
+              </svg>
+            </a>
+            <a href="#" class="social__link">
+              <svg class="social__icon">
+                <use href="/assets/img/icons/svg-sprites.svg#inst"></use>
+              </svg>
+            </a>
+            <a href="#" class="social__link">
+              <svg class="social__icon">
+                <use href="/assets/img/icons/svg-sprites.svg#twitter"></use>
+              </svg>
+            </a>
+          </div>
+          <h4 class="footer__nav-subtitle">Посетите наше приложение</h4>
+          <div class="footer__nav-content download">
+            <a href="#" class="footer__nav-download">
+              <img src="/assets/img/icons/google-play.svg" alt="">
+              <div class="footer__nav-text">
+                <h6>Get it on</h6>
+                <p>Google play</p>
+              </div>
+            </a>
+            <a href="#" class="footer__nav-download">
+              <svg class="footer__nav-icon">
+                <use href="/assets/img/icons/svg-sprites.svg#apple"></use>
+              </svg>
+              <div class="footer__nav-text">
+                <h6 style="text-transform: none;">Available on the</h6>
+                <p>Apple Store</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </footer>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="../assets/js/script.js"></script>
 </body>
+
 </html>

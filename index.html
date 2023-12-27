@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
   <title>Home</title>
 </head>
@@ -51,7 +52,7 @@
       </div>
     </header>
 
-    <div class="banner container">
+    <div class="banner container" data-aos="fade-right">
       <article class="banner__content">
         <div class="banner__heading">
           <h4 class="banner__subtitle">Best Destinations around the world</h4>
@@ -85,7 +86,7 @@
       </div>
     </div>
 
-    <section class="services container">
+    <section class="services container" data-aos="fade-left">
       <div class="services__decore">
         <img src="assets/img/icons/decore2.svg" alt="decore">
       </div>
@@ -125,7 +126,7 @@
       </ul>
     </section>
 
-    <section class="destinations container">
+    <section class="destinations container" data-aos="fade-up">
       <div class="destinations__decore">
         <img src="assets/img/icons/decore3.svg" alt="decore">
       </div>
@@ -197,7 +198,7 @@
       </div>
     </section>
 
-    <section class="steps container">
+    <section class="steps container" data-aos="fade-right">
       <div class="steps__content">
         <div class="steps__heading">
           <h3 class="steps__subtitle">Easy and Fast</h3>
@@ -290,7 +291,7 @@
       </div>
     </section>
 
-    <section class="comments container">
+    <section class="comments container" data-aos="fade-left">
       <div class="comments__content">
         <div class="comments__heading">
           <h3 class="comments__subtitle">Testimonials</h3>
@@ -342,7 +343,7 @@
       </div>
     </section>
 
-    <div class="collaborators container">
+    <div class="collaborators container"data-aos="fade-right">
       <div class="collaborators__item">
         <img src="/assets/img/image/collaborators-1.png" alt="collaborators" class="collaborators__image">
       </div>
@@ -360,7 +361,7 @@
       </div>
     </div>
 
-    <section class="subscribe">
+    <section class="subscribe" data-aos="fade-left">
       <div class="subscribe__content">
         <h1 class="subscribe__title">Subscribe to get information, latest news and other interesting offers about Cobham</h1>
 
@@ -379,7 +380,7 @@
       <img src="/assets/img/icons/decore6.svg" alt="decore" class="subscribe__decore">
     </section>
 
-    <footer class="footer container">
+    <footer class="footer container" data-aos="fade-up">
       <div class="footer__info">
         <img src="/assets/img/icons/footer-logo.svg" alt="logo" class="footer__logo">
         <p class="footer__desc">Book your trip in minute, get full Control for much longer.</p>
@@ -452,6 +453,10 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="assets/js/script.js"></script>
 </body>
 

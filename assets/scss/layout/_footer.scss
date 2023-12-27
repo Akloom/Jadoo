@@ -36,6 +36,7 @@
 
     &-link {
       @include link(18px, 500, var(--text-light-blue));
+      transition: .6s all;
 
       &:hover {
         color: var(--text-blue);
